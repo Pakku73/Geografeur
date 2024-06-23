@@ -2,40 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
-
     <link rel="stylesheet" href="views/navbar.css">
-    <link rel="stylesheet" href="views/footer.css">    
-    <link rel="stylesheet" href="majeur.css">
-
-    <script src="poussse.js" defer></script>
+    <link rel="stylesheet" href="views/footer.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-
     <link rel="shortcut icon" href="assets/images/geographic-map-compass-map-drawing-compass-drawing-compass-sketch_392_wh1200.png" type="image/x-icon">
     <title>Geografeur</title>
 </head>
-
 <body>
 
     <div class="navbar">
-        <a href="#connexion" id="connexion">Se connecter</a>
+        <a href="#connexion">Se connecter</a>
         <a href="#apropos">À propos</a>
         <a href="#aide">Aide</a>
-        <a href="home.html" id="quitter">Quitter</a>
+        <a href="game.html">Commencer</a>
     </div>
 
-    <h1 class="title">_g ou bb</h1>
+    <div class="content">
 
-    <div class="viewer">
-        <div id="map"></div>
+        <div class="content">
+            <video class="video-background" autoplay loop muted>
+                <source src="assets/videos/earth.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="overlay">
+                <h1>Geografeur</h1>
+                <p>Bienvenue sur Geografeur ! Réussirez-vous à faire le meilleur score ?</p>
+                <button class="start-button" onclick="window.location.href='index.html'">Commencer</button>
+            </div>
+        </div>
     </div>
-
 
     <footer>
         <div class="footer-upper">
