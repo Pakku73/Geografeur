@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    max-height: 1080px;
+}
+
+
+/* TEXT HOVER VIDEO */
+
+.video-background {
+    /* position: relative; */
+    z-index: -3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 1.5em;
+}
+
+/* START BUTTON */
+
+/* Ajoute ce style pour le bouton moderne */
+.start-button {
+    background-color: #4CAF50; /* Vert */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Transition pour l'animation */
+}
+
+/* Change la couleur du bouton au survol */
+.start-button:hover {
+    background-color: #45a049; /* Vert plus foncé */
+}
+
+/* Ajoute un effet d'échelle au clic */
+.start-button:active {
+    transform: scale(0.95);
+}
+
+.start-button.clicked {
+    background-color: #65a268; /* Nouvelle couleur après le clic */
+}
+
+
